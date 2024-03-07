@@ -1,0 +1,1310 @@
+[
+    {
+        "Id": 1,
+        "Name": "ErrorRollOver",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 2,
+        "Name": "POSTFail",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 3,
+        "Name": "ErrorUndefined",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 4,
+        "Name": "Keyboard A",
+        "Value": "a",
+        "ShiftValue": "A"
+    },
+    {
+        "Id": 5,
+        "Name": "Keyboard B",
+        "Value": "b",
+        "ShiftValue": "B"
+    },
+    {
+        "Id": 6,
+        "Name": "Keyboard C",
+        "Value": "c",
+        "ShiftValue": "C"
+    },
+    {
+        "Id": 7,
+        "Name": "Keyboard D",
+        "Value": "d",
+        "ShiftValue": "D"
+    },
+    {
+        "Id": 8,
+        "Name": "Keyboard E",
+        "Value": "e",
+        "ShiftValue": "E"
+    },
+    {
+        "Id": 9,
+        "Name": "Keyboard F",
+        "Value": "f",
+        "ShiftValue": "F"
+    },
+    {
+        "Id": 10,
+        "Name": "Keyboard G",
+        "Value": "g",
+        "ShiftValue": "G"
+    },
+    {
+        "Id": 11,
+        "Name": "Keyboard H",
+        "Value": "h",
+        "ShiftValue": "H"
+    },
+    {
+        "Id": 12,
+        "Name": "Keyboard I",
+        "Value": "i",
+        "ShiftValue": "I"
+    },
+    {
+        "Id": 13,
+        "Name": "Keyboard J",
+        "Value": "j",
+        "ShiftValue": "J"
+    },
+    {
+        "Id": 14,
+        "Name": "Keyboard K",
+        "Value": "k",
+        "ShiftValue": "K"
+    },
+    {
+        "Id": 15,
+        "Name": "Keyboard L",
+        "Value": "l",
+        "ShiftValue": "L"
+    },
+    {
+        "Id": 16,
+        "Name": "Keyboard M",
+        "Value": "m",
+        "ShiftValue": "M"
+    },
+    {
+        "Id": 17,
+        "Name": "Keyboard N",
+        "Value": "n",
+        "ShiftValue": "N"
+    },
+    {
+        "Id": 18,
+        "Name": "Keyboard O",
+        "Value": "o",
+        "ShiftValue": "O"
+    },
+    {
+        "Id": 19,
+        "Name": "Keyboard P",
+        "Value": "p",
+        "ShiftValue": "P"
+    },
+    {
+        "Id": 20,
+        "Name": "Keyboard Q",
+        "Value": "q",
+        "ShiftValue": "Q"
+    },
+    {
+        "Id": 21,
+        "Name": "Keyboard R",
+        "Value": "r",
+        "ShiftValue": "R"
+    },
+    {
+        "Id": 22,
+        "Name": "Keyboard S",
+        "Value": "s",
+        "ShiftValue": "S"
+    },
+    {
+        "Id": 23,
+        "Name": "Keyboard T",
+        "Value": "t",
+        "ShiftValue": "T"
+    },
+    {
+        "Id": 24,
+        "Name": "Keyboard U",
+        "Value": "u",
+        "ShiftValue": "U"
+    },
+    {
+        "Id": 25,
+        "Name": "Keyboard V",
+        "Value": "v",
+        "ShiftValue": "V"
+    },
+    {
+        "Id": 26,
+        "Name": "Keyboard W",
+        "Value": "w",
+        "ShiftValue": "W"
+    },
+    {
+        "Id": 27,
+        "Name": "Keyboard X",
+        "Value": "x",
+        "ShiftValue": "X"
+    },
+    {
+        "Id": 28,
+        "Name": "Keyboard Y",
+        "Value": "y",
+        "ShiftValue": "Y"
+    },
+    {
+        "Id": 29,
+        "Name": "Keyboard Z",
+        "Value": "z",
+        "ShiftValue": "Z"
+    },
+    {
+        "Id": 30,
+        "Name": "Keyboard 1 and Bang",
+        "Value": "1",
+        "ShiftValue": "!"
+    },
+    {
+        "Id": 31,
+        "Name": "Keyboard 2 and At",
+        "Value": "2",
+        "ShiftValue": "@"
+    },
+    {
+        "Id": 32,
+        "Name": "Keyboard 3 and Hash",
+        "Value": "3",
+        "ShiftValue": "#"
+    },
+    {
+        "Id": 33,
+        "Name": "Keyboard 4 and Dollar",
+        "Value": "4",
+        "ShiftValue": "$"
+    },
+    {
+        "Id": 34,
+        "Name": "Keyboard 5 and Percent",
+        "Value": "5",
+        "ShiftValue": "%"
+    },
+    {
+        "Id": 35,
+        "Name": "Keyboard 6 and Caret",
+        "Value": "6",
+        "ShiftValue": "^"
+    },
+    {
+        "Id": 36,
+        "Name": "Keyboard 7 and Ampersand",
+        "Value": "7",
+        "ShiftValue": "&"
+    },
+    {
+        "Id": 37,
+        "Name": "Keyboard 8 and Star",
+        "Value": "8",
+        "ShiftValue": "*"
+    },
+    {
+        "Id": 38,
+        "Name": "Keyboard 9 and Left Bracket",
+        "Value": "9",
+        "ShiftValue": "("
+    },
+    {
+        "Id": 39,
+        "Name": "Keyboard 0 and Right Bracket",
+        "Value": "0",
+        "ShiftValue": ")"
+    },
+    {
+        "Id": 40,
+        "Name": "Keyboard Return Enter",
+        "Value": "\n",
+        "ShiftValue": "\n"
+    },
+    {
+        "Id": 41,
+        "Name": "Keyboard Escape",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 42,
+        "Name": "Keyboard Delete",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 43,
+        "Name": "Keyboard Tab",
+        "Value": "\t",
+        "ShiftValue": "\t"
+    },
+    {
+        "Id": 44,
+        "Name": "Keyboard Spacebar",
+        "Value": " ",
+        "ShiftValue": " "
+    },
+    {
+        "Id": 45,
+        "Name": "Keyboard Dash and Underscore",
+        "Value": "-",
+        "ShiftValue": "_"
+    },
+    {
+        "Id": 46,
+        "Name": "Keyboard Equals and Plus",
+        "Value": "=",
+        "ShiftValue": "+"
+    },
+    {
+        "Id": 47,
+        "Name": "Keyboard Left Brace",
+        "Value": "[",
+        "ShiftValue": "{"
+    },
+    {
+        "Id": 48,
+        "Name": "Keyboard Right Brace",
+        "Value": "]",
+        "ShiftValue": "}"
+    },
+    {
+        "Id": 49,
+        "Name": "Keyboard Backslash and Pipe",
+        "Value": "\\",
+        "ShiftValue": "|"
+    },
+    {
+        "Id": 50,
+        "Name": "Keyboard Non-US Hash and Tilde",
+        "Value": "#",
+        "ShiftValue": "~"
+    },
+    {
+        "Id": 51,
+        "Name": "Keyboard SemiColon and Colon",
+        "Value": ";",
+        "ShiftValue": ":"
+    },
+    {
+        "Id": 52,
+        "Name": "Keyboard Left Apos and Double",
+        "Value": "'",
+        "ShiftValue": "\""
+    },
+    {
+        "Id": 53,
+        "Name": "Keyboard Grave Accent and Tilde",
+        "Value": "`",
+        "ShiftValue": "~"
+    },
+    {
+        "Id": 54,
+        "Name": "Keyboard Comma and LessThan",
+        "Value": ",",
+        "ShiftValue": "<"
+    },
+    {
+        "Id": 55,
+        "Name": "Keyboard Period and GreaterThan",
+        "Value": ".",
+        "ShiftValue": ">"
+    },
+    {
+        "Id": 56,
+        "Name": "Keyboard ForwardSlash and QuestionMark",
+        "Value": "/",
+        "ShiftValue": "?"
+    },
+    {
+        "Id": 57,
+        "Name": "Keyboard Caps Lock",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 58,
+        "Name": "Keyboard F1",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 59,
+        "Name": "Keyboard F2",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 60,
+        "Name": "Keyboard F3",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 61,
+        "Name": "Keyboard F4",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 62,
+        "Name": "Keyboard F5",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 63,
+        "Name": "Keyboard F6",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 64,
+        "Name": "Keyboard F7",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 65,
+        "Name": "Keyboard F8",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 66,
+        "Name": "Keyboard F9",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 67,
+        "Name": "Keyboard F10",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 68,
+        "Name": "Keyboard F11",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 69,
+        "Name": "Keyboard F12",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 70,
+        "Name": "Keyboard PrintScreen",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 71,
+        "Name": "Keyboard Scroll Lock",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 72,
+        "Name": "Keyboard Pause",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 73,
+        "Name": "Keyboard Insert",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 74,
+        "Name": "Keyboard Home",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 75,
+        "Name": "Keyboard PageUp",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 76,
+        "Name": "Keyboard Delete Forward",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 77,
+        "Name": "Keyboard End",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 78,
+        "Name": "Keyboard PageDown",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 79,
+        "Name": "Keyboard RightArrow",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 80,
+        "Name": "Keyboard LeftArrow",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 81,
+        "Name": "Keyboard DownArrow",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 82,
+        "Name": "Keyboard UpArrow",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 83,
+        "Name": "Keypad Num Lock and Clear",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 84,
+        "Name": "Keypad ForwardSlash",
+        "Value": "/",
+        "ShiftValue": "/"
+    },
+    {
+        "Id": 85,
+        "Name": "Keypad Star",
+        "Value": "*",
+        "ShiftValue": "*"
+    },
+    {
+        "Id": 86,
+        "Name": "Keypad Dash",
+        "Value": "-",
+        "ShiftValue": "-"
+    },
+    {
+        "Id": 87,
+        "Name": "Keypad Plus",
+        "Value": "+",
+        "ShiftValue": "+"
+    },
+    {
+        "Id": 88,
+        "Name": "Keypad ENTER",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 89,
+        "Name": "Keypad 1 and End",
+        "Value": "1",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 90,
+        "Name": "Keypad 2 and Down Arrow",
+        "Value": "2",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 91,
+        "Name": "Keypad 3 and PageDn",
+        "Value": "3",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 92,
+        "Name": "Keypad 4 and Left Arrow",
+        "Value": "4",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 93,
+        "Name": "Keypad 5",
+        "Value": "5",
+        "ShiftValue": "5"
+    },
+    {
+        "Id": 94,
+        "Name": "Keypad 6 and Right Arrow",
+        "Value": "6",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 95,
+        "Name": "Keypad 7 and Home",
+        "Value": "7",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 96,
+        "Name": "Keypad 8 and Up Arrow",
+        "Value": "8",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 97,
+        "Name": "Keypad 9 and PageUp",
+        "Value": "9",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 98,
+        "Name": "Keypad 0 and Insert",
+        "Value": "0",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 99,
+        "Name": "Keypad Period and Delete",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 100,
+        "Name": "Keyboard Non-US Backslash and Pipe",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 101,
+        "Name": "Keyboard Application",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 102,
+        "Name": "Keyboard Power",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 103,
+        "Name": "Keypad Equals",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 104,
+        "Name": "Keyboard F13",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 105,
+        "Name": "Keyboard F14",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 106,
+        "Name": "Keyboard F15",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 107,
+        "Name": "Keyboard F16",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 108,
+        "Name": "Keyboard F17",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 109,
+        "Name": "Keyboard F18",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 110,
+        "Name": "Keyboard F19",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 111,
+        "Name": "Keyboard F20",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 112,
+        "Name": "Keyboard F21",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 113,
+        "Name": "Keyboard F22",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 114,
+        "Name": "Keyboard F23",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 115,
+        "Name": "Keyboard F24",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 116,
+        "Name": "Keyboard Execute",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 117,
+        "Name": "Keyboard Help",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 118,
+        "Name": "Keyboard Menu",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 119,
+        "Name": "Keyboard Select",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 120,
+        "Name": "Keyboard Stop",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 121,
+        "Name": "Keyboard Again",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 122,
+        "Name": "Keyboard Undo",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 123,
+        "Name": "Keyboard Cut",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 124,
+        "Name": "Keyboard Copy",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 125,
+        "Name": "Keyboard Paste",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 126,
+        "Name": "Keyboard Find",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 127,
+        "Name": "Keyboard Mute",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 128,
+        "Name": "Keyboard Volume Up",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 129,
+        "Name": "Keyboard Volume Down",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 130,
+        "Name": "Keyboard Locking Caps Lock",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 131,
+        "Name": "Keyboard Locking Num Lock",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 132,
+        "Name": "Keyboard Locking Scroll Lock",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 133,
+        "Name": "Keypad Comma",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 134,
+        "Name": "Keypad Equal Sign",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 135,
+        "Name": "Keyboard International1",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 136,
+        "Name": "Keyboard International2",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 137,
+        "Name": "Keyboard International3",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 138,
+        "Name": "Keyboard International4",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 139,
+        "Name": "Keyboard International5",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 140,
+        "Name": "Keyboard International6",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 141,
+        "Name": "Keyboard International7",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 142,
+        "Name": "Keyboard International8",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 143,
+        "Name": "Keyboard International9",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 144,
+        "Name": "Keyboard LANG1",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 145,
+        "Name": "Keyboard LANG2",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 146,
+        "Name": "Keyboard LANG3",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 147,
+        "Name": "Keyboard LANG4",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 148,
+        "Name": "Keyboard LANG5",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 149,
+        "Name": "Keyboard LANG6",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 150,
+        "Name": "Keyboard LANG7",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 151,
+        "Name": "Keyboard LANG8",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 152,
+        "Name": "Keyboard LANG9",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 153,
+        "Name": "Keyboard Alternate Erase",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 154,
+        "Name": "Keyboard SysReq Attention",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 155,
+        "Name": "Keyboard Cancel",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 156,
+        "Name": "Keyboard Clear",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 157,
+        "Name": "Keyboard Prior",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 158,
+        "Name": "Keyboard Return",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 159,
+        "Name": "Keyboard Separator",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 160,
+        "Name": "Keyboard Out",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 161,
+        "Name": "Keyboard Oper",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 162,
+        "Name": "Keyboard Clear Again",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 163,
+        "Name": "Keyboard CrSel Props",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 164,
+        "Name": "Keyboard ExSel",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 176,
+        "Name": "Keypad Double 0",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 177,
+        "Name": "Keypad Triple 0",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 178,
+        "Name": "Thousands Separator",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 179,
+        "Name": "Decimal Separator",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 180,
+        "Name": "Currency Unit",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 181,
+        "Name": "Currency Sub-unit",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 182,
+        "Name": "Keypad Left Bracket",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 183,
+        "Name": "Keypad Right Bracket",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 184,
+        "Name": "Keypad Left Brace",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 185,
+        "Name": "Keypad Right Brace",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 186,
+        "Name": "Keypad Tab",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 187,
+        "Name": "Keypad Backspace",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 188,
+        "Name": "Keypad A",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 189,
+        "Name": "Keypad B",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 190,
+        "Name": "Keypad C",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 191,
+        "Name": "Keypad D",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 192,
+        "Name": "Keypad E",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 193,
+        "Name": "Keypad F",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 194,
+        "Name": "Keypad XOR",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 195,
+        "Name": "Keypad Caret",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 196,
+        "Name": "Keypad Percentage",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 197,
+        "Name": "Keypad Less",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 198,
+        "Name": "Keypad Greater",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 199,
+        "Name": "Keypad Ampersand",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 200,
+        "Name": "Keypad Double Ampersand",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 201,
+        "Name": "Keypad Bar",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 202,
+        "Name": "Keypad Double Bar",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 203,
+        "Name": "Keypad Colon",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 204,
+        "Name": "Keypad Hash",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 205,
+        "Name": "Keypad Space",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 206,
+        "Name": "Keypad At",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 207,
+        "Name": "Keypad Bang",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 208,
+        "Name": "Keypad Memory Store",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 209,
+        "Name": "Keypad Memory Recall",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 210,
+        "Name": "Keypad Memory Clear",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 211,
+        "Name": "Keypad Memory Add",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 212,
+        "Name": "Keypad Memory Subtract",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 213,
+        "Name": "Keypad Memory Multiply",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 214,
+        "Name": "Keypad Memory Divide",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 215,
+        "Name": "Keypad Plus Minus",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 216,
+        "Name": "Keypad Clear",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 217,
+        "Name": "Keypad Clear Entry",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 218,
+        "Name": "Keypad Binary",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 219,
+        "Name": "Keypad Octal",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 220,
+        "Name": "Keypad Decimal",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 221,
+        "Name": "Keypad Hexadecimal",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 224,
+        "Name": "Keyboard LeftControl",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 225,
+        "Name": "Keyboard LeftShift",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 226,
+        "Name": "Keyboard LeftAlt",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 227,
+        "Name": "Keyboard Left GUI",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 228,
+        "Name": "Keyboard RightControl",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 229,
+        "Name": "Keyboard RightShift",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 230,
+        "Name": "Keyboard RightAlt",
+        "Value": "",
+        "ShiftValue": ""
+    },
+    {
+        "Id": 231,
+        "Name": "Keyboard Right GUI",
+        "Value": "",
+        "ShiftValue": ""
+    }
+]
