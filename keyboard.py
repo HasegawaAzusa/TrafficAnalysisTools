@@ -151,12 +151,6 @@ def main(file: click.Path, data: bool, verbose: bool):
 
     Sometimes scapy could not parse hiddatas from pcap file,
     so this tool is used to parse hiddatas from pcap file or extracted data by tshark
-
-    For example:
-
-    `tshark -r file.pcap -T fields -e usb.capdata > data.dat`
-
-    `tshark -r file.pcap -Y "usb.device_address == 1" -T fields -e usb.capdata`
     """
     hiddatas: list[bytes] = None
     # For extracted data by tshark, else pcap file

@@ -156,6 +156,16 @@ def parse_hiddatas(hiddatas: list[bytes], verbose: int, device: str, output_mode
 @click.option('-d', '--data', is_flag=True, default=False, help='isdata input')
 @click.option('-v', '--verbose', count=True, help='verbose output')
 def main(file: click.Path, output: list[str], data: bool, verbose: bool):
+    """
+    A tool to parse hiddatas from pcap file or extracted data by tshark
+
+    HID data length must be 8 bytes or 4 bytes, and the first byte is the button mask
+
+    Other support Linux micelog.
+
+    Sometimes scapy could not parse hiddatas from pcap file,
+    so this tool is used to parse hiddatas from pcap file or extracted data by tshark
+    """
     hiddatas: list[bytes] = None
     output_mode = OutputMode(0)
     for mode in output:
