@@ -177,3 +177,7 @@ cython_debug/
 *.ipynb
 *_test
 *_test/*
+*.pdf
+ctx.json
+test*
+!webshell_test

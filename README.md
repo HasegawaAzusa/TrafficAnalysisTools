@@ -88,7 +88,50 @@ python keyboard.py -f data.dat -d
 
 
 
+### webshell
 
+用于自动化解析常见 WebShell 流量包中的编码/加密数据。
+
+> 暂时还没写完，目前只有少量功能。
+>
+> `-f` 参数输入流量包，`-t` 选择解析用翻译器（`Translator`）
+>
+> 比如说对于 AntSword 流量示例
+>
+> ```bash
+> python .\webshell.py -f .\webshell_test\antsword.pcapng -t antsword
+> ```
+>
+> 推荐以 JSON 形式输入上下文相关量，不同翻译器需求不同相关量（参数 `-c`），示例
+>
+> ```bash
+> python .\webshell.py -f .\webshell_test\antsword.pcapng -t antsword -c ctx.json > rst.txt
+> ```
+>
+> 对于 Behinder 流量
+>
+> ```bash
+> python .\webshell.py -f .\webshell_test\behinder.pcapng -t behinder.xor_base64 -c ctx.json > rst.txt
+> ```
+>
+> `ctx.json` 示例
+>
+> ```json
+> {
+>     "password": "qsdzyyds",
+>     "encoder": "base64",
+>     "decoder": "base64",
+>     "key": "e45e329feb5d925b"
+> }
+> ```
+
+目标是能够自动化分析出流量包中的默认 WebShell 流量，并且分析其行为
+
+> 进行模板比对得知行为。
+>
+> 不过还未实现。
+
+ 需要注意的是，目前 `scapy` 解析 HTTP 流量时会有一定 BUG，目前考虑是否转为 PyShark。
 
 
 

@@ -3,7 +3,6 @@ from pathlib import Path
 from enum import IntFlag
 import json
 from scapy.layers import usb
-import itertools
 import click
 
 EPILOG = "Author: qsdz (Email to 531240801@qq.com)"
