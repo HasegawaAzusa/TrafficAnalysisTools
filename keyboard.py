@@ -1,21 +1,26 @@
-from scapy.all import *
-from pathlib import Path
+from collections import defaultdict
 from enum import IntFlag
-import json
-from scapy.layers import usb
+from pathlib import Path
+from typing import NamedTuple
 import click
+import json
+import pyshark
 
 EPILOG = "Author: qsdz (Email to 531240801@qq.com)"
-URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER = 0x09
+URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER = 0x0009
+USB_KEYBOARD_FILTER = f"(usb.capdata or usbhid.data) and usb.function == {URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER}"
+
 
 class HIDKeyboardKey(NamedTuple):
     """
     HID Keyboard Key Usage
     """
+
     id: int
     name: str
     value: str = ""
     shift_value: str = ""
+
 
 class ModifierKeyMask(IntFlag):
     NONE = 0x00
@@ -32,16 +37,18 @@ class ModifierKeyMask(IntFlag):
     ALT = LALT | RALT
     META = LMETA | RMETA
 
+
 class MappingKeyId(IntFlag):
     """
     Mapping Key Id, some special keys
     """
+
     A = 4
     Z = 29
     DELETE = 42
     CAPS = 57
 
-# Modifier keys table
+
 modifier_key_table = {
     ModifierKeyMask.NONE: HIDKeyboardKey(ModifierKeyMask.NONE, "None"),
     ModifierKeyMask.LCTRL: HIDKeyboardKey(ModifierKeyMask.LCTRL, "Left Control"),
@@ -54,8 +61,12 @@ modifier_key_table = {
     ModifierKeyMask.RMETA: HIDKeyboardKey(ModifierKeyMask.RMETA, "Right Meta"),
 }
 
-keyboard_values = json.loads(Path('KeyboardValues.json').read_text())
-mapping_key_table = {obj["Id"]: HIDKeyboardKey(obj["Id"], obj["Name"], obj['Value'], obj['ShiftValue']) for obj in keyboard_values}
+keyboard_values = json.loads(Path("KeyboardValues.json").read_text())
+mapping_key_table = {
+    obj["Id"]: HIDKeyboardKey(obj["Id"], obj["Name"], obj["Value"], obj["ShiftValue"])
+    for obj in keyboard_values
+}
+
 
 class SimulatedEditBox:
     """
@@ -65,6 +76,7 @@ class SimulatedEditBox:
         value: str, current input value
         is_caps: bool, is caps lock on
     """
+
     value: str = ""
     is_caps: bool = False
 
@@ -73,8 +85,8 @@ class SimulatedEditBox:
         input once
 
         Args:
-            modifier_key: HIDKeyboardKey, modifier key
-            mapping_key: HIDKeyboardKey, mapping key
+            modifier_key (HIDKeyboardKey): modifier key
+            mapping_key (HIDKeyboardKey): mapping key
         """
         # First handle special keys
         if mapping_key.id == MappingKeyId.CAPS:
@@ -83,31 +95,34 @@ class SimulatedEditBox:
             self.value = self.value[:-1]
         else:
             # Handle normal keys
-            is_specialed = self.is_caps and MappingKeyId.A <= mapping_key.id <= MappingKeyId.Z
+            is_specialed = (
+                self.is_caps and MappingKeyId.A <= mapping_key.id <= MappingKeyId.Z
+            )
             if modifier_key.id == ModifierKeyMask.NONE:
-                self.value += mapping_key.value if not is_specialed else mapping_key.shift_value
+                self.value += (
+                    mapping_key.value if not is_specialed else mapping_key.shift_value
+                )
             elif modifier_key.id & ModifierKeyMask.SHIFT:
-                self.value += mapping_key.shift_value if not is_specialed else mapping_key.value
-
-def usbpcap_unique_id(usbpcap: usb.USBpcap):
-    """
-    Get unique id from USBpcap
-    """
-    assert usbpcap.haslayer(usb.USBpcap)
-    return f'{usbpcap.bus}-{usbpcap.device}-{usbpcap.endpoint}'
+                self.value += (
+                    mapping_key.shift_value if not is_specialed else mapping_key.value
+                )
 
 
 def parse_hiddatas(hiddatas: list[bytes], verbose: int):
     """
     The core function to parse hiddatas
+
+    Args:
+        hiddatas (list[bytes]): hiddatas from usbhid packet
+        verbose (int): verbose level
     """
     editbox = SimulatedEditBox()
     for hiddata in hiddatas:
+        if len(hiddata) != 8:
+            continue
         ### verbose level 2
         if verbose >= 2:
-            click.echo(
-                click.style(f" ** {hiddata.hex()}", fg='cyan')
-            )
+            click.echo(click.style(f" ** {hiddata.hex()}", fg="cyan"))
         modifier_key = modifier_key_table.get(hiddata[0], None)
         for i in range(2, 8):
             mapping_key = mapping_key_table.get(hiddata[i], None)
@@ -115,10 +130,12 @@ def parse_hiddatas(hiddatas: list[bytes], verbose: int):
             # If modifier key is not found, report and skip this packet
             if not modifier_key:
                 click.echo(
-                    click.style(f'[x] Could not parse HID data: {hiddata.hex()}', fg='red')
+                    click.style(
+                        f"[x] Could not parse HID data: {hiddata.hex()}", fg="red"
+                    )
                 )
                 continue
-            
+
             # If mapping key is not found, skip this packet
             if not mapping_key:
                 continue
@@ -127,21 +144,28 @@ def parse_hiddatas(hiddatas: list[bytes], verbose: int):
             # If verbose, print the parsed data
             if verbose >= 1:
                 click.echo(
-                    click.style(f" * {modifier_key.name:<13}{mapping_key.name}", fg='cyan')
+                    click.style(
+                        f" * {modifier_key.name:<13}{mapping_key.name}", fg="cyan"
+                    )
                 )
-            
+
             # Simulate input
             editbox.input(modifier_key, mapping_key)
-    
+
     # Last print the possible input
-    click.echo(
-        click.style(f'[+] Simulated Input Data: {editbox.value}', fg='green')
-    )
+    click.echo(click.style(f"[+] Simulated Input Data: {editbox.value}", fg="green"))
+
 
 @click.command(epilog=EPILOG)
-@click.option('-f', '--file', type=click.Path(exists=True, dir_okay=False), help='pcap file path', required=True)
-@click.option('-d', '--data', is_flag=True, default=False, help='isdata input')
-@click.option('-v', '--verbose', count=True, help='verbose output')
+@click.option(
+    "-f",
+    "--file",
+    type=click.Path(exists=True, dir_okay=False),
+    help="pcap file path",
+    required=True,
+)
+@click.option("-d", "--data", is_flag=True, default=False, help="isdata input")
+@click.option("-v", "--verbose", count=True, help="verbose output")
 def main(file: click.Path, data: bool, verbose: bool):
     """
     A tool to parse hiddatas from pcap file or extracted data by tshark
@@ -151,32 +175,35 @@ def main(file: click.Path, data: bool, verbose: bool):
     Sometimes scapy could not parse hiddatas from pcap file,
     so this tool is used to parse hiddatas from pcap file or extracted data by tshark
     """
-    hiddatas: list[bytes] = None
-    # For extracted data by tshark, else pcap file
+    # usb.src -> data.usb_capdata / data.usbhid_data
+    groups: dict[str, list[str]] = defaultdict(list)
     if data:
-        with open(file, 'r') as f:
+        with open(file, "r") as f:
             filedatas = f.read().splitlines()
-        hiddatas = [bytes.fromhex(d.replace(':', '')) for d in filedatas]
-        hiddatas = filter(lambda d: len(d) == 8, hiddatas)
-        parse_hiddatas(hiddatas, verbose)
+        groups["9.5.210"] = filedatas
     else:
         # Only USB packets with URB function is URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER
-        packets = list(
-                filter(
-                    lambda packet: packet.haslayer(usb.USBpcap) and
-                    packet.function == URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER,
-                    sniff(offline=file)
-                )
-            )
-        device_keys = set(usbpcap_unique_id(packet) for packet in packets)
-        # Group by bus id and device id
-        for device in device_keys:
-            group = filter(lambda packet: usbpcap_unique_id(packet) == device,packets)
-            click.echo(
-                click.style(f"[+] Device: {device}", fg='green')
-            )
-            hiddatas = [usb_packet.load for usb_packet in group if usb_packet.dataLength == 8]
-            parse_hiddatas(hiddatas, verbose)
+        capture = pyshark.FileCapture(file, display_filter=USB_KEYBOARD_FILTER)
+        for packet in capture:
+            try:
+                if "usb_capdata" in packet.data.field_names:
+                    groups[packet.usb.src].append(packet.data.usb_capdata)
+                elif "usbhid_data" in packet.data.field_names:
+                    groups[packet.usb.src].append(packet.data.usbhid_data)
+            except:
+                if verbose >= 1:
+                    click.echo(
+                        click.style(
+                            f"[x] Could not parse packet: {packet.usb.src}", fg="red"
+                        )
+                    )
 
-if __name__ == '__main__':
+    for device, hex_hiddatas in groups.items():
+        click.echo(click.style(f"[+] Device: {device}", fg="green"))
+        hiddatas = [bytes.fromhex(d.replace(":", "")) for d in hex_hiddatas]
+        hiddatas = filter(lambda d: len(d) == 8, hiddatas)
+        parse_hiddatas(hiddatas, verbose)
+
+
+if __name__ == "__main__":
     main()
